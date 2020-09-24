@@ -1,0 +1,428 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* body */
+
+#Page {
+    position: absolute;
+}
+
+/* header */
+
+header {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: black;
+    color: white;
+    z-index: 1;
+}
+
+#autoportret {
+    height: 200px;
+    width: 200px;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    top: 10px;
+    left: 10px;
+    border: 2px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 0px 20px;
+    overflow: hidden;
+}
+
+#header {
+    position: relative;
+    top: 20%;
+}
+
+#header h1 {
+    padding-top: 10px;
+    margin-left: 10px;
+    font-size: 2.1em;
+}
+
+#header h2 {
+    padding-left: 10px;
+    color: gray;
+    font-size: 1.8em;
+}
+
+/* article */
+
+#box_1 h3,
+#box_2 h3,
+#box_3 h3,
+#box_4 h3 {
+    padding-top: 10px;
+    margin-left: 10px;
+    font-size: 1.3em;
+}
+
+#box_1 h3,
+#box_2 h3,
+#box_3 h3,
+#box_4 h3 {
+    color: gray;
+}
+
+p {
+    font-size: 1.1em;
+}
+
+#box_1 p,
+#box_2 p,
+#box_3 p,
+#box_4 p {
+    padding-bottom: 50px;
+}
+
+#box_1,
+#box_3 {
+    font-weight: 900;
+}
+
+#box_1 {
+    position: relative;
+    z-index=2;
+}
+
+#box_2 {
+    position: relative;
+    z-index=3;
+}
+
+#box_3 {
+    position: relative;
+    z-index=4;
+}
+
+#box_4 {
+    position: relative;
+    z-index=5;
+}
+
+#box_1,
+#box_3 {
+    background-color: white;
+    color: black;
+}
+
+#box_2,
+#box_4 {
+    background-color: black;
+    color: white;
+}
+
+#box_3 .logo {
+    background-color: gray;
+    height: 120px;
+    width: 120px;
+    position: relative;
+    top: 8px;
+    left: 12px;
+    margin-bottom: 10px;
+    border: 2px;
+    border-style: solid;
+    border-radius: 120px;
+}
+
+#box_4 .logo {
+    background-color: gray;
+    height: 120px;
+    width: 120px;
+    position: relative;
+    top: 10px;
+    left: 12px;
+    margin-bottom: 10px;
+    border: 2px;
+    border-style: solid;
+    border-radius: 120px;
+}
+
+#html5_logo {
+    height: 100px;
+    width: 100px;
+    border-color: black;
+    position: relative;
+    top: 10px;
+    left: 8px;
+}
+
+#css3_logo {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    border-color: white;
+    top: 10px;
+    left: 8px;
+}
+
+p {
+    margin: 10px 10px 0px 10px;
+}
+
+/* footer */
+
+footer {
+    height: 100vh;
+    width: 90%;
+    top: 0;
+    left: 0;
+    padding-top: 45vh;
+    margin: 0;
+    background-color: white;
+    color: black;
+    position: relative;
+    z-index: 6;
+}
+
+footer h3 {
+    font-size: 1.3em;
+    transform: rotate(-15deg);
+}
+
+footer h3 span {
+    color: gray;
+    margin-left: 5px;
+    font-size: 1.25em;
+}
+
+/* media */
+
+@media (orientation: landscape) {
+    #header {
+        position: absolute;
+        transform: scale(0.8);
+    }
+
+    #header h1 {
+        position: relative;
+        top: -143px;
+        left: 210px;
+    }
+
+    #header h2 {
+        position: relative;
+        top: -143px;
+        left: 210px;
+    }
+}
+
+@media (min-width: 320px) {
+    #header h1 {
+        font-size: 2.4em;
+    }
+
+    #header h2 {
+        font-size: 2.1em;
+    }
+
+    #box_1 h3,
+    #box_2 h3,
+    #box_3 h3,
+    #box_4 h3 {
+        font-size: 1.45em;
+    }
+
+    p {
+        font-size: 1.25em;
+    }
+
+    footer {
+        height: 100vh;
+        padding-top: 40vh;
+    }
+
+    footer h3 {
+        font-size: 1.5em;
+        transform: rotate(-15deg);
+    }
+
+    footer h3 span {
+        color: gray;
+        margin-left: 6px;
+        font-size: 1.45em;
+    }
+}
+
+@media (min-width: 375px) {
+    #header h1 {
+        font-size: 2.85em;
+    }
+
+    #header h2 {
+        font-size: 2.45em;
+    }
+
+    #box_1 h3,
+    #box_2 h3,
+    #box_3 h3,
+    #box_4 h3 {
+        font-size: 1.7em;
+    }
+
+    p {
+        font-size: 1.3em;
+    }
+
+    footer {
+        height: 100vh;
+    }
+
+    footer h3 {
+        margin-left: ;
+        font-size: 1.75em;
+        transform: rotate(-15deg);
+    }
+
+    footer h3 span {
+        color: gray;
+        margin-left: 7px;
+        font-size: 1.3em;
+    }
+}
+
+@media (min-width: 411px) {
+    #header {
+        top: 25%;
+    }
+
+    #header h1 {
+        font-size: 3.1em;
+    }
+
+    #header h2 {
+        font-size: 2.6em;
+    }
+
+    #box_1 h3,
+    #box_2 h3,
+    #box_3 h3,
+    #box_4 h3 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 1.3em;
+    }
+
+    footer {
+        height: 100vh;
+    }
+
+    footer h3 {
+        font-size: 1.9em;
+        transform: rotate(-15deg);
+    }
+
+    footer h3 span {
+        color: gray;
+        margin-left: 6px;
+        font-size: 1.4em;
+    }
+}
+
+@media (min-width: 720px) {
+
+    header {
+        position: relative;
+    }
+
+    #autoportret {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
+    #header {
+        position: absolute;
+        top: 50%;
+        left: 25%;
+    }
+
+    #box_1 {
+        position: relative;
+        vertical-align: middle;
+        padding: 50vh 20%;
+    }
+
+    #box_1 h3,
+    #box_1 p {
+        margin: 0 20px;
+        display: inline-block;
+    }
+
+    #box_2 {
+        position: relative;
+        vertical-align: middle;
+        padding: 50vh 20%;
+    }
+
+    #box_2 h3,
+    #box_2 p {
+        margin: 0 20px;
+        display: inline-block;
+    }
+
+    #box_3 {
+        position: relative;
+        vertical-align: middle;
+        padding: 50vh 20%;
+    }
+
+    #box_3 figure {
+        margin: 0 10px;
+    }
+
+    #box_3 h3,
+    #box_3 p {
+        margin: 0 20px;
+        top: 20px;
+        left: 20px;
+    }
+
+    #box_4 {
+        position: relative;
+        vertical-align: middle;
+        padding: 50vh 20%;
+    }
+
+    #box_4 figure {
+        margin: 0 10px;
+    }
+
+    #box_4 h3,
+    #box_4 p {
+        margin: 0 20px;
+        top: 20px;
+        left: 20px;
+    }
+
+    footer {
+        position: relative;
+    }
+
+    footer h3 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    footer h3 span {
+        position: absolute;
+        top: 20%;
+        left: 16%;
+        transform: translate(-50%, -50%);
+    }
