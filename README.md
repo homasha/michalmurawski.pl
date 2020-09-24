@@ -1,1 +1,1 @@
-# This is my private home site.
+# michalmurawski.pl
